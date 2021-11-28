@@ -7,8 +7,14 @@ using System.Threading.Tasks;
 
 namespace RubicX_PS223020.BusinesLogic.Core.Interfaces
 {
-    interface IUserService
+    public interface IUserService
     {
         Task<UserInformationBlo> RegisterWithPhone(string numberPrefix, string number, string password);
+        Task<UserInformationBlo> AutWithPhone(string numberPrefix, string number, string password);
+        Task<UserInformationBlo> AutWithEmail(string email, string password);
+        Task<UserInformationBlo> AutWithLogin(string login, string password);
+        Task<UserInformationBlo> Get(int userId);
+        Task<UserInformationBlo> Update(string numberPrefix, string number, string password, UserUpdateBlo userUpdateBlo);
+        Task<bool> DoesExist();
     }
 }

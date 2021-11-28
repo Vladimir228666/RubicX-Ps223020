@@ -17,7 +17,7 @@ namespace RubciX_Ps223020_DataAccess.Core.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Patronymic { get; set; }
-        public DateTimeOffset Birtday { get; set; }
+        public DateTimeOffset Birthday { get; set; }
         public string AvatarUrl { get; set; }
         public UserRoleRto Role { get; set; }
 
